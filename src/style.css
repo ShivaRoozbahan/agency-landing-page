@@ -1,0 +1,115 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --Soft-red: rgb(254, 120, 103);
+  --Yellow: rgb(250, 212, 0);
+  --Dark-desaturated: rgb(37, 86, 75);
+  --Dark-blue: rgb(25, 83, 107);
+  --Dark-moderate: rgb(69, 140, 126);
+  --Grayish-blue: rgb(167, 171, 174);
+  --White: rgb(255, 255, 255);
+  --Dark-grayish-blue: rgb(129, 132, 152);
+  --dark-desaturated-blue: rgb(35, 48, 62);
+  --dark: rgb(90, 99, 108);
+}
+
+@font-face {
+  font-family: Barlow-bold;
+  src: url(../assets/font/Barlow-Bold.ttf) format(TrueType);
+}
+
+@font-face {
+  font-family: Barlow-ExtraBold;
+  src: url(../assets/font/Barlow-ExtraBold.ttf) format(TrueType);
+}
+
+@font-face {
+  font-family: Barlow-Light;
+  src: url(../assets/font/Barlow-Light.ttf) format(TrueType);
+}
+
+@font-face {
+  font-family: Fraunces-Regular;
+  src: url(../assets/font/Fraunces_72pt_Soft-Regular.ttf) format(TrueType);
+}
+
+@font-face {
+  font-family: Fraunces-bold;
+  src: url(../assets/font/Fraunces_9pt_Soft-Bold.ttf) format(TrueType);
+}
+
+@font-face {
+  font-family: Fraunces-Light;
+  src: url(../assets/font/Fraunces_9pt_Soft-Light.ttf) format(TrueType);
+}
+
+/* --- header --- */
+.header {
+  width: 100%;
+  height: 90rem;
+  background-image: url(../assets/images/desktop/image-header.jpg);
+  position: relative;
+}
+
+/* .header-bg-img {
+  object-fit: cover;
+  z-index: 1;
+} */
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 5rem;
+  /* color: var(--White); */
+}
+
+.header-logo {
+  width: 15rem;
+}
+
+.header-nav {
+  gap: 4rem;
+  display: flex;
+}
+
+.header-link {
+  color: var(--White);
+  align-self: center;
+  font-family: Barlow-bold;
+  font-size: 2rem;
+  padding: 1.5rem;
+  border: none;
+}
+
+.header-link:hover {
+  text-transform: uppercase;
+  background-color: #ffffff5e;
+  border-radius: 3rem;
+}
+
+.header p {
+  text-align: center;
+  color: var(--White);
+  font-family: Fraunces-bold;
+  font-size: 6rem;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  margin-top: 10rem;
+}
+
+.header-icon-arrow {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+}
