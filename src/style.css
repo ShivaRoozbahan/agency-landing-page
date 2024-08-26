@@ -16,7 +16,7 @@ html {
   --Yellow: rgb(250, 212, 0);
   --Dark-desaturated: rgb(37, 86, 75);
   --Dark-blue: rgb(25, 83, 107);
-  --Dark-moderate: rgb(69, 140, 126);
+  --Dark-moderate: rgb(134, 211, 196);
   --Grayish-blue: rgb(167, 171, 174);
   --White: rgb(255, 255, 255);
   --Dark-grayish-blue: rgb(129, 132, 152);
@@ -98,7 +98,7 @@ html {
   border-radius: 3rem;
 }
 
-.header p {
+h1 {
   text-align: center;
   color: var(--White);
   font-family: Fraunces-bold;
@@ -113,3 +113,71 @@ html {
   left: 50%;
   top: 40%;
 }
+
+.conteiner {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(3, 50%);
+}
+
+.conteiner > * {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text-sugarcubes {
+  background-image: url(../assets/images/desktop/image-graphic-design.jpg);
+}
+
+.text-orang {
+  background-image: url(../assets/images/desktop/image-photography.jpg);
+}
+
+/* -------- gallery -------- */
+.gallery {
+  display: flex;
+}
+.photos-gallery {
+  height: 48rem;
+}
+
+/* -- ----- footer ----------- */
+
+.footer-conteiner {
+  background-color: var(--Dark-moderate);
+  width: 100%;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.footer-logo {
+  width: 15rem;
+}
+
+.footer-nav,
+.footer-icon {
+  display: flex;
+  gap: 4rem;
+}
+.footer-logo {
+  fill: var(--Dark-desaturated);
+}
+
+.footer-link {
+  color: var(--Dark-desaturated);
+  font-family: Barlow-Light;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.footer-link:hover {
+  color: var(--White);
+}
+
+/* .icon-conect:hover {
+  background-color: var(--White);
+} */
