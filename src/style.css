@@ -134,6 +134,72 @@ h1 {
   background-image: url(../assets/images/desktop/image-photography.jpg);
 }
 
+/* ------------ */
+.client-conteiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70rem;
+  gap: 9rem;
+  background-color: rgb(238, 238, 235);
+}
+.client-title {
+  font-size: 3rem;
+  color: var(--Grayish-blue);
+  letter-spacing: 0.7rem;
+  font-weight: 600;
+  font-family: Fraunces-bold;
+}
+
+.client-admin {
+  display: flex;
+  justify-content: center;
+  gap: 11rem;
+}
+
+.admin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7rem;
+}
+
+.admin p {
+  font-family: Barlow-Light;
+  font-weight: 900;
+  font-size: 2rem;
+  text-align: center;
+  width: 39rem;
+  color: var(--dark);
+}
+
+.admin-img {
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+}
+
+.name-admin {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.name-admin h3 {
+  font-family: Fraunces-bold;
+  font-size: 2rem;
+  color: var(--dark-desaturated-blue);
+}
+
+.name-admin span {
+  font-family: Barlow-Light;
+  color: var(--Grayish-blue);
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
 /* -------- gallery -------- */
 .gallery {
   display: flex;
