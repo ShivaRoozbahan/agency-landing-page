@@ -114,10 +114,12 @@ h1 {
   top: 40%;
 }
 
+/* ------------------- */
+
 .conteiner {
   display: grid;
-  grid-template-columns: repeat(2, 50%);
-  grid-template-rows: repeat(3, 50%);
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(3, auto);
 }
 
 .conteiner > * {
@@ -126,15 +128,39 @@ h1 {
   object-fit: cover;
 }
 
-.text-sugarcubes {
-  background-image: url(../assets/images/desktop/image-graphic-design.jpg);
+.text-stand {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4rem;
 }
 
-.text-orang {
-  background-image: url(../assets/images/desktop/image-photography.jpg);
+.text-stand h2 {
+  font-family: Fraunces-bold;
+  font-size: 4rem;
 }
 
-/* ------------ */
+.text-stand p {
+  font-family: Barlow-Light;
+  font-weight: 900;
+  font-size: 2rem;
+  text-align: center;
+  width: 55rem;
+  color: var(--dark);
+  text-align: left;
+}
+
+.text-stand a {
+  color: black;
+  font-weight: 900;
+  font-size: 1.7rem;
+}
+
+/* .graphic-design {
+  display: flex;
+} */
+
+/* ------------ client ---------*/
 .client-conteiner {
   display: flex;
   flex-direction: column;
