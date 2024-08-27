@@ -83,6 +83,9 @@ body {
   gap: 4rem;
   display: flex;
 }
+.hamber {
+  opacity: 0;
+}
 
 .header-link {
   color: var(--White);
@@ -161,6 +164,9 @@ h1 {
 .item5,
 .item6 {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .item5 h2 {
   font-family: Fraunces-bold;
@@ -168,30 +174,21 @@ h1 {
   color: var(--Dark-desaturated);
   position: absolute;
   bottom: 23rem;
-  margin: 0 30%;
+  align-self: center;
+  /* margin: 0 30%; */
 }
 
-.item5 p {
+.item5 p,
+.item6 p {
   color: var(--Dark-desaturated);
   font-family: Barlow-Light;
   font-weight: 700;
-  width: 25rem;
+  width: 40rem;
   position: absolute;
-  bottom: 13rem;
-  left: 22rem;
+  bottom: 10rem;
   text-align: center;
-  line-height: 2rem;
-}
-.item6 p {
-  color: var(--Dark-blue);
-  font-family: Barlow-Light;
-  font-weight: 700;
-  width: 20rem;
-  position: absolute;
-  bottom: 15rem;
-  left: 27rem;
-  text-align: center;
-  line-height: 2rem;
+  line-height: 3.2rem;
+  font-size: 2rem;
 }
 
 .item6 img,
@@ -205,14 +202,11 @@ h1 {
   color: var(--Dark-blue);
   position: absolute;
   bottom: 23rem;
-  margin: 0 35%;
+  text-align: center;
+  /* margin: 0 35%; */
 }
 /* ------------ client ---------*/
 .client-conteiner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   height: 70rem;
   gap: 9rem;
   background-color: rgb(238, 238, 235);
@@ -223,12 +217,15 @@ h1 {
   letter-spacing: 0.7rem;
   font-weight: 600;
   font-family: Fraunces-bold;
+  text-align: center;
+  padding: 9rem;
 }
 
 .client-admin {
   display: flex;
   justify-content: center;
   gap: 11rem;
+  flex-wrap: wrap;
 }
 
 .admin {
@@ -275,9 +272,11 @@ h1 {
 
 /* -------- gallery -------- */
 .gallery {
+  /* width: 1528px; */
   display: flex;
 }
 .photos-gallery {
+  width: 100%;
   height: 48rem;
 }
 
@@ -320,3 +319,71 @@ h1 {
 /* .icon-conect:hover {
   background-color: var(--White);
 } */
+
+@media screen and (max-width: 501px) {
+  .header-link {
+    opacity: 0;
+    padding: 0;
+  }
+  .conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .item2 {
+    order: -1;
+  }
+
+  .text-stand {
+    width: 1000%;
+    margin: 0;
+    text-align: center;
+    margin: 4rem;
+  }
+  .text-stand p {
+    text-align: center;
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  .text-stand h2 {
+    font-size: 3rem;
+  }
+
+  .more-link::before {
+    width: 4rem;
+    height: 2rem;
+    background: #000;
+  }
+
+  .item5 img,
+  .item6 img {
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  .client-conteiner {
+    height: 150rem;
+  }
+
+  .client-admin {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* height: 200rem; */
+  }
+
+  .admin {
+    gap: 4rem;
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .photos-gallery {
+    width: 50%;
+    height: 30rem;
+    object-fit: cover;
+  }
+}
